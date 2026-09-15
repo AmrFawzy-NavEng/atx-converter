@@ -2,10 +2,10 @@
 
 Convert antenna calibrations between ANTEX v1.4 and v2.0.
 
-> **Status: release in preparation.** The program is finished and in testing.
-> Downloads are published here and on Zenodo from **16 September 2026**, to
-> coincide with the presentation at Frontiers of Geodetic Science (INTERGEO 2026,
-> Munich). This repository currently holds the description and the licence only.
+> **Version 1.0, released 1 September 2026.** Download the Windows package
+> from [Releases](https://github.com/J-kroeger/atx-converter/releases/latest), unzip it and start
+> `ATX-Converter.exe`. No installation and no Python required. The full source code is in
+> this repository.
 
 ## What it does
 
@@ -33,10 +33,24 @@ coordinate computed with it.
 - Previews the output before writing it
 
 
+## Running from source
+
+The program is written in Python and was built with Python 3.12.
+
+```
+python -m pip install -r requirements.txt
+python pcc_convertor.py
+```
+
+On Windows, `launch_gui.bat` does the same when no packaged executable is next to it.
+The full user guide is in [`readme.txt`](readme.txt).
+
+The `src/` folder holds the ANTEX reader shared with [PCC-Explorer](https://github.com/J-kroeger/pcc-explorer).
+
 ## Part of PCC-Suite
 
 This program is one of seven released together as
-[PCC-Suite](https://github.com/AmrFawzy-NavEng/pcc-suite), a collection of open-source programs for GNSS antenna
+[PCC-Suite](https://github.com/J-kroeger/pcc-suite), a collection of open-source programs for GNSS antenna
 calibration values from the Institut für Erdmessung (IfE), Leibniz University
 Hannover. Each is a standalone Windows executable, released and versioned
 separately, so you can take only the one you need. No installation, no Python
